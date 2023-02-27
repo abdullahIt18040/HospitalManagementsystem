@@ -1,0 +1,597 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.png">
+  <title>Preschool - Bootstrap Admin Template</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/fullcalendar.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/plugins/morris/morris.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+  <script src="./assets/js/html5shiv.min.js"></script>
+  <script src="./assets/js/respond.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+
+<div class="main-wrapper">
+  <div class="container-fluid ">
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Bootstrap" width="60" height=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="welcome.html">Admin Dashbord </a>
+            </li>
+
+
+
+          </ul>
+
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="login.html">Register User</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./logout">Logout</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+
+    <div class="sidebar mt-3" id="sidebar"> <!-- sidebar -->
+      <div class="sidebar-inner slimscroll">
+        <div id="sidebar-menu" class="sidebar-menu">
+          <ul>
+            <li class="menu-title">Main</li>
+            <li class="active">
+              <a href="/admin-dashbord"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+            </li>
+            <li class="submenu">
+              <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span> Doctor</span> <span class="menu-arrow"></span></a>
+              <ul class="list-unstyled" style="display: none;">
+                <li><a href="/alldoctor">All Doctor</a></li>
+                <li><a href="/adddoctor">Add Doctor</a></li>
+                <li><a href="/adddoctor">Edit Doctor</a></li>
+                <li><a href="about-teacher.html">About Doctor</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span> Reciptionist</span> <span class="menu-arrow"></span></a>
+              <ul class="list-unstyled" style="display: none;">
+                <li><a href="all-students.html">All Reciptionist</a></li>
+                <li><a href="add-student.html">Add Reciptionist</a></li>
+                <li><a href="edit-student.html">Edit Reciptionist</a></li>
+                <li><a href="about-student.html">About Reciptionist</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span> pharmacist</span> <span class="menu-arrow"></span></a>
+              <ul class="list-unstyled" style="display: none;">
+                <li><a href="all-parents.html">All pharmacist</a></li>
+                <li><a href="add-parent.html">Add pharmacist</a></li>
+                <li><a href="edit-parent.html">Edit pharmacist</a></li>
+                <li><a href="about-parent.html">About pharmacist</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><i class="fa fa-share-alt" aria-hidden="true"></i> <span>Apps</span> <span class="menu-arrow"></span></a>
+              <ul style="display: none;">
+                <li class="submenu">
+                  <a href="javascript:void(0);"><span>Email</span> <span class="menu-arrow"></span></a>
+                  <ul style="display: none;">
+                    <li><a href="compose.html"><span>Compose Mail</span></a></li>
+                    <li>
+                      <a href="inbox.html"> <span> Inbox</span> </a>
+                    </li>
+                    <li><a href="mail-view.html"><span>Mailview</span></a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="chat.html"> Chat <span class="badge badge-pill bg-primary float-right">5</span></a>
+                </li>
+                <li class="submenu">
+                  <a href="#"><span> Calls</span> <span class="menu-arrow"></span></a>
+                  <ul class="list-unstyled" style="display: none;">
+                    <li><a href="voice-call.html">Voice Call</a></li>
+                    <li><a href="video-call.html">Video Call</a></li>
+                    <li><a href="incoming-call.html">Incoming Call</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contacts.html"> Contacts</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="calendar.html" style="width: 80%; display: inline-block;"><i class="fa fa-calendar" aria-hidden="true"></i> Calendar</a>
+            </li>
+
+
+            <li>
+              <a href="calendar.html"><i class="fa fa-table" aria-hidden="true"></i> Events</a>
+            </li>
+
+
+
+
+
+
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-wrapper"> <!-- content -->
+      <div class="content container-fluid">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+              <h5 class="text-uppercase">Edit Doctor</h5>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+              <ul class="list-inline breadcrumb float-right">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="index.html">Doctor</a></li>
+                <li class="list-inline-item"> Edit Doctor</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-content">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="card">
+                <div class="page-title">
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div class="page-title">Student information</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <form class="custom-mt-form">
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="Richard Miles"  />
+                          <label class="control-label">Firstname</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="you@example.com"  />
+                          <label class="control-label">Email</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="password" />
+                          <label class="control-label">Password</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="Maths"  />
+                          <label class="control-label">Subject</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <select >
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                          <label class="control-label">Gender</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input class="datetimepicker" value="18/04/1998" type="text">
+                          <label class="control-label">Birth Date</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="1"  />
+                          <label class="control-label">Class</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="Hindu"  />
+                          <label class="control-label">Religion</label><i class="bar"></i>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                      <form class="custom-mt-form">
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="Miles"  >
+                          <label class="control-label">Lastname</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input class="form-control floating datetimepicker" value="12/05/2018" type="text" >
+                          <label class="control-label">Joining Date</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="password" />
+                          <label class="control-label">Comfirm Password</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="number" value="9853467121"  />
+                          <label class="control-label">Mobile number</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="1234"  />
+                          <label class="control-label">Admission No</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="FD-00d1"  />
+                          <label class="control-label">ID</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group custom-mt-form-group">
+                          <input type="text" value="A"  />
+                          <label class="control-label">Section</label><i class="bar"></i>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="page-title w-100">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                          <div class="page-title pl-3">Parent information</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body w-100 parent-form">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                          <form class="custom-mt-form">
+                            <div class="form-group custom-mt-form-group">
+                              <input type="text" value="John"  />
+                              <label class="control-label">Father Name</label><i class="bar"></i>
+                            </div>
+                            <div class="form-group custom-mt-form-group">
+                              <input type="text" value="Mathematical technician"  />
+                              <label class="control-label">Father Occupation</label><i class="bar"></i>
+                            </div>
+                            <div class="form-group custom-mt-form-group">
+                              <input type="number" value="9735845870"  />
+                              <label class="control-label">Mobile number</label><i class="bar"></i>
+                            </div>
+                            <div class="form-group">
+                              <textarea id="message" class="form__field" placeholder="Present Address" rows="4">4467 Sherman street,Kansas</textarea>
+                              <label for="message" class="form-label">Present Address</label>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+                          <form class="custom-mt-form">
+                            <div class="form-group custom-mt-form-group">
+                              <input type="text" value="Maries"  />
+                              <label class="control-label">Mother Name</label><i class="bar"></i>
+                            </div>
+                            <div class="form-group custom-mt-form-group">
+                              <input type="text" value="Teacher"  />
+                              <label class="control-label">Mother Occupation</label><i class="bar"></i>
+                            </div>
+                            <div class="form-group custom-mt-form-group">
+                              <input type="text" value="Indian"  />
+                              <label class="control-label">Nationality</label><i class="bar"></i>
+                            </div>
+                            <div class="form-group">
+                              <textarea id="message" class="form__field" placeholder="Premanent Address" rows="4">4467 Sherman street,Kansas</textarea>
+                              <label for="message" class="form-label">Premanent Address</label>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <form class="custom-mt-form">
+                        <div class="form-group custom-mt-form-group">
+                          <input type="file" name="pic" accept="image/*" style="margin-bottom:10px;">
+                          <label class="control-label">Student Image</label><i class="bar"></i>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <form class="custom-mt-form">
+                        <div class="form-group custom-mt-form-group">
+                          <input type="file" name="pic" accept="image/*" style="margin-bottom:10px;">
+                          <label class="control-label">Parents Image</label><i class="bar"></i>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <form class="custom-mt-form">
+                        <div class="form-group text-center custom-mt-form-group">
+                          <button class="btn btn-primary mr-2" type="submit">Submit</button>
+                          <button class="btn btn-secondary" type="reset">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notification-box">
+        <div class="msg-sidebar notifications msg-noti">
+          <div class="topnav-dropdown-header">
+            <span>Messages</span>
+          </div>
+          <div class="drop-scroll msg-list-scroll">
+            <ul class="list-box">
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">R</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author">Richard Miles </span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item new-message">
+                    <div class="list-left">
+                      <span class="avatar">J</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author">Ruth C. Gault</span>
+                      <span class="message-time">1 Aug</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">T</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author"> Tarah Shropshire </span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">M</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author">Mike Litorus</span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">C</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author"> Catherine Manseau </span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">D</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author"> Domenic Houston </span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">B</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author"> Buster Wigton </span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">R</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author"> Rolland Webber </span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">C</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author"> Claire Mapes </span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">M</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author">Melita Faucher</span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">J</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author">Jeffery Lalor</span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">L</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author">Loren Gatlin</span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="chat.html">
+                  <div class="list-item">
+                    <div class="list-left">
+                      <span class="avatar">T</span>
+                    </div>
+                    <div class="list-body">
+                      <span class="message-author">Tarah Shropshire</span>
+                      <span class="message-time">12:28 AM</span>
+                      <div class="clearfix"></div>
+                      <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="topnav-dropdown-footer">
+            <a href="chat.html">See all messages</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="delete_employee" class="modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content modal-md">
+          <div class="modal-header">
+            <h4 class="modal-title">Delete Employee</h4>
+          </div>
+          <form>
+            <div class="modal-body card-box">
+              <p>Are you sure want to delete this?</p>
+              <div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+                <button type="submit" class="btn btn-danger">Delete</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<div class="sidebar-overlay" data-reff=""></div>
+<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./assets/js/popper.min.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="./assets/js/select2.min.js"></script>
+<script type="text/javascript" src="./assets/js/moment.min.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/morris/morris.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/raphael/raphael-min.js"></script>
+<script type="text/javascript" src="./assets/js/fullcalendar.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.fullcalendar.js"></script>
+<script type="text/javascript" src="./assets/js/chart.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
