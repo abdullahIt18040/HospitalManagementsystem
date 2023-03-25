@@ -21,6 +21,7 @@ public class HomeController {
     @GetMapping("/adminlog")
     public  String adminlog()
     {
+
         return "login.html";
     }
 
@@ -131,6 +132,13 @@ public class HomeController {
     {
 
         return "contact.html";
+    }
+
+    @GetMapping("/doctorreg")
+    public  String registerdoctor()
+    {
+
+        return "doctorregister.html";
     }
 
     @GetMapping("/blog")

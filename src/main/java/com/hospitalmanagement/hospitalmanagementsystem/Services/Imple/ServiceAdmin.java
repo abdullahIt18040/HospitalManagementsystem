@@ -12,15 +12,16 @@ private final AdminRepository adminRepository;
 
  public ServiceAdmin(AdminRepository adminRepository)
  {
+
      this.adminRepository=adminRepository;
  }
 
 
-    @Override
-    public Admin saveAdmin(Admin admin) {
-     this.adminRepository.save(admin);
 
-        return admin;
+    public Admin saveAdmin(Admin admin) {
+         return adminRepository.save(admin);
+
+
     }
 
 

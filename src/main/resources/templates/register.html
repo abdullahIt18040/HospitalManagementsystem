@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <div th:replace="fragment/head1 :: head2">
 </div>
 
@@ -13,25 +13,25 @@
                     <div class="account-logo">
                         <a href="index.html"><img src="assets/img/logo.png" alt="School-admin"></a>
                     </div>
-                    <form action="/Admin" method="post">
+                    <form action="/adminsave"  method="POST">
                         <div class="form-group custom-mt-form-group">
-                            <input type="text"  id="name" name="name"/>
+                            <input type="text"  name="name"/>
                             <label class="control-label">Username </label><i class="bar"></i>
                         </div>
 
                         <div class="form-group custom-mt-form-group">
-                            <input type="text" id="email" name="email"  />
+                            <input type="text"   name="email"  />
                             <label class="control-label">Email </label><i class="bar"></i>
                         </div>
 
 
                         <div class="form-group custom-mt-form-group">
-                            <input type="password" id="password" name="password"/>
+                            <input type="password"   name="password"/>
                             <label class="control-label">Password</label><i class="bar"></i>
                         </div>
 
                         <div class="form-group custom-mt-form-group">
-                            <input type="password"  id="repassword" name="repassword"/>
+                            <input type="password"  name="repassword"/>
                             <label class="control-label">Repeat Password</label><i class="bar"></i>
                         </div>
                         <div class="form-group text-center custom-mt-form-group">
